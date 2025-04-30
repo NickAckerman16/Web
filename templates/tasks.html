@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block body %}
+        <h1>Mis Tareas</h1>
+        <p> Mi tarea pendiente es: {{ tareas }}</p>
+        <ul>
+            {% for tarea in tareas %}
+                <li>{{ tarea }}</li>
+            {% endfor %}
+        </ul>
+        {% endblock %}
+  
