@@ -27,5 +27,9 @@ def signup():
 def create_tasks():
     return render_template('create_tasks.html')
 
+@app.route('/task')
+def task():
+    return render_template('task.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1', port=5001)
